@@ -3,7 +3,7 @@ import streamlit as st
 import google.generativeai as genai
 from dotenv import load_dotenv
 from utils.prompt_builder import build_prompt
-from utils.formatter import format_response
+from utils.formatters import format_response
 
 # Load .env file
 load_dotenv()
