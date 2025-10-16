@@ -15,7 +15,7 @@ if not API_KEY:
 else:
     genai.configure(api_key=API_KEY)
 
-MODEL_NAME = "models/gemini-1.5-flash"
+MODEL_NAME = "models/gemini-2.5-flash"
 
 # Konfigurasi tampilan Streamlit
 st.set_page_config(page_title="EcoChat – AI Konsultan Pengelolaan Sampah", layout="wide")
