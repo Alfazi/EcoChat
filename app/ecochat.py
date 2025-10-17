@@ -6,7 +6,21 @@ from agents.main_agent import EcoChatAgent
 # Load .env file
 load_dotenv()
 
+<<<<<<< HEAD
 st.set_page_config(page_title="EcoChat AI Multi-Agent", layout="wide")
+=======
+# Konfigurasi API
+API_KEY = os.getenv("GEMINI_API_KEY")
+if not API_KEY:
+    st.error("API key tidak ditemukan. Pastikan sudah diset di file .env sebagai GEMINI_API_KEY.")
+else:
+    genai.configure(api_key=API_KEY)
+
+MODEL_NAME = "models/gemini-1.5-flash"
+
+# Konfigurasi tampilan Streamlit
+st.set_page_config(page_title="EcoChat – AI Konsultan Pengelolaan Sampah", layout="wide")
+>>>>>>> parent of ae74db3 (change model)
 
 # Header
 st.title("♻️ EcoChat AI Multi-Agent Konsultan Pengelolaan Sampah")
